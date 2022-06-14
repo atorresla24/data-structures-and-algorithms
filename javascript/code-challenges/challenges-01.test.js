@@ -7,9 +7,17 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
+<<<<<<< HEAD
 
 const addOne = (arr) => {
   // Solution code here...
+=======
+let newArr = [];
+
+const addOne = (arr) => {
+  arr.forEach((num) => newArr.push(num + 1));
+  return newArr;
+>>>>>>> cbae24ea59ebed63d81dcc66b2f7d07e04624cdf
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -19,9 +27,17 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
+<<<<<<< HEAD
 
 const addExclamation = (arr) => {
   // Solution code here...
+=======
+let arr2 = [];
+
+const addExclamation = (arr) => {
+  arr.forEach((string) => arr2.push(string + '!'));
+  return arr2;
+>>>>>>> cbae24ea59ebed63d81dcc66b2f7d07e04624cdf
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,9 +47,17 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
+<<<<<<< HEAD
 
 const allUpperCase = (arr) => {
   // Solution code here...
+=======
+let arr3 = [];
+
+const allUpperCase = (arr) => {
+  arr.forEach((string) => arr3.push(string.toUpperCase()));
+  return arr3;
+>>>>>>> cbae24ea59ebed63d81dcc66b2f7d07e04624cdf
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,11 +71,23 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
+<<<<<<< HEAD
   // Solution code here...
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+=======
+  (word.toUpperCase + '!');
+};
+
+let arr4 = [];
+
+const speaker = (words, callback) => {
+  callback(words);
+  words.forEach((strings) => arr4.push(strings.toUpperCase() + '!'));
+  return arr4;
+>>>>>>> cbae24ea59ebed63d81dcc66b2f7d07e04624cdf
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,11 +107,19 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
+<<<<<<< HEAD
   // Solution code here...
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+=======
+  arr.push(value);
+};
+
+const addNumbers = (num, arr, times, callback) => {
+  num.push(arr);
+>>>>>>> cbae24ea59ebed63d81dcc66b2f7d07e04624cdf
 };
 
 /* ------------------------------------------------------------------------------------------------
