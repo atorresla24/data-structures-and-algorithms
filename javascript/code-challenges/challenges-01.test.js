@@ -84,11 +84,11 @@ const addValues = (arr, value) => {
   arr.push(value);
 };
 
-let newArr5 = [];
 const addNumbers = (num, arr, times, callback) => {
-  for(i=0; i < arr.length; i++){
-    
+  for (let i = 0; i < times; i ++){
+    callback(arr, num);
   }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
