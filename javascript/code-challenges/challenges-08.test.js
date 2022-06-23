@@ -71,7 +71,7 @@ const containsW = (str) => {
     return false;
   }
 };
-/* ------------------------------------------------------------------------------------------------
+/* //test------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
 Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
