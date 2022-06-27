@@ -8,7 +8,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  
+  return str.split('').splice(-10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,7 +26,9 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
-
+  let maxRow = matrix.map(function(row){return Math.max.apply(Math, row);});
+  let max = Math.max.apply(null, maxRow);
+  return max;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,7 +46,8 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  
+  let sum = matrix => matrix.reduce((r, x) => r + x.reduce((s, y) => s + y, 0), 0);
+  return sum(matrix);
 };
 
 
@@ -71,7 +74,12 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  for(let i = 0; i < hoursOpen.length; i++){
+    for(let j = 0; j < cookieStores.length; j++){
+      let sum = stores.map(num => num.reduce((previous, next)=> previous+next[i], 0));
+      return sum;
+    }
+  }
 
 };
 
@@ -111,7 +119,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
