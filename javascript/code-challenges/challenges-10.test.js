@@ -74,14 +74,21 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  for(let i = 0; i < hoursOpen.length; i++){
-    for(let j = 0; j < cookieStores.length; j++){
-      let sum = stores.map(num => num.reduce((previous, next)=> previous+next[i], 0));
-      return sum;
+  let hourlyTotals = [];
+  for(let i = 0; i < stores[0].length; i++){
+    let hourlySum = 0;
+    for(let j = 0; j < stores.length; j++){
+      hourlySum += stores[j][i];
     }
+    hourlyTotals.push(hourlySum);
   }
-
+  return hourlyTotals;
 };
+
+// for(let i = 0; i < hoursOpen.length; i++){
+  //   for(let j = 0; j < cookieStores.length; j++){
+  //     let sum = stores.map(num => num.reduce((previous, next)=> previous+next[i], 0));
+  //     return sum;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -119,7 +126,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
