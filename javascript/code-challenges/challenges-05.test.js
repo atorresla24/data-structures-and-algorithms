@@ -12,7 +12,8 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-  return people.map((first, last) => first + last, []);
+  const toLastNames = people.map((name) => name.firstName + ' ' + name.lastName);
+  return toLastNames;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -113,7 +114,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  return arr.reduce((last, next) => last + next.name, []);
+  let namesOnly = [];
+  return arr.reduce((namesArr, character) => {
+    namesOnly.push(character.name);
+    return namesOnly;
+}, {});
 };
 
 /* ------------------------------------------------------------------------------------------------
