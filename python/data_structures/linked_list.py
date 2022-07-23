@@ -5,11 +5,35 @@ class LinkedList:
 
     def __init__(self):
         # initialization here
-        pass
+        self.head = None
 
-    def some_method(self):
-        # method body here
-        pass
+    def __str__(self):
+        text = ""
+        current = self.head
+
+        while current is not None:
+            text += "{ " + str(current.value) + " } -> "
+            current = current.next
+        return text + "NULL"
+
+    def includes(self, target):
+        current = self.head
+
+        while current is not None:
+            if current.value == target:
+                return True
+            current = current.next
+        return False
+
+    def insert(self, value):
+        new_node = Node(value)
+        new_node.next = self.head
+        self.head = new_node
+
+
+class Node:
+    def __init__(self, value, next=None):
+        self.value = value
 
 
 class TargetError:
