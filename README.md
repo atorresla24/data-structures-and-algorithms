@@ -27,3 +27,4 @@ To run your tests
 - [Array Binary Search](python/array-binary-search/README.md)
 - [Linked list kth](python/docs/linked_list_kth/README.md)
 - [Linked List Zip](python/docs/linked_list_zip/README.md)
+- [Stack and Queue](python/docs/stack_and_queue/README.md)
