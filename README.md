@@ -25,3 +25,5 @@ To run your tests
 - [Array Reverse](python/array-reverse/README.md)
 - [Array Insert Shift](python/array-insert-shift/README.md)
 - [Array Binary Search](python/array-binary-search/README.md)
+- [Linked list kth](python/docs/linked_list_kth/README.md)
+- [Linked List Zip](python/docs/linked_list_zip/README.md)
